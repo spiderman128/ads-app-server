@@ -1,0 +1,215 @@
+@import url('widgets.css');
+@import url('colors.css');
+@import url('backgrounds.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v67/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+*, body {
+	font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	*::-webkit-scrollbar {
+		display: none !important;
+	}
+}
+
+main {
+	padding: 1em;
+}
+
+.fr-container {
+	max-width: 800px;
+	background: #FFF;
+	margin: auto;
+}
+
+.navbar-toggler[aria-expanded='false'] {
+	outline: 0 !important;
+}
+
+.navbar-toggler[aria-expanded='true'] {
+	outline: 0 !important;
+}
+
+.navbar-toggler::before {
+	content: 'menu';
+	color: #FFF;
+	font-size: 30px;
+	font-family: 'Material Icons' !important;
+}
+
+.navbar-toggler[aria-expanded='true']::before {
+	content: 'close';
+}
+
+.nav-link[data-icon]::before, .dropdown-item[data-icon]::before {
+	margin-right: 10px;
+	content: attr(data-icon);
+	position: relative;
+	top: 5px;
+	font-size: 20px;
+	line-height: normal !important;
+	font-family: 'Material Icons' !important;
+}
+
+.btn i {
+	vertical-align: middle;
+	font-size: 22px;
+	padding-right: 6px;
+	font-style: normal !important;
+	line-height: normal !important;
+	font-family: 'Material Icons' !important
+}
+
+h1 i, h2 i, h3 i, h4 i, h5 i, h6 i, label i {
+	vertical-align: middle;
+	font-size: 22px;
+	padding-right: 6px;
+	font-style: normal !important;
+	line-height: normal !important;
+	font-family: 'Material Icons' !important
+}
+
+.fr-container {
+	max-width: 800px;
+	background: #FFF;
+	color: #020202;
+	margin: auto;
+	padding: 1em;
+    border: 1px solid rgb(222, 226, 230) !important;
+    border-top-width: 3px !important;
+    border-top-color: #007bff !important;
+}
+
+.fr-xs {
+	max-width: 320px !important;
+}
+
+.fr-sm {
+	max-width: 420px !important;
+}
+
+.fr-md {
+	max-width: 800px !important;
+}
+
+.fr-lg {
+	max-width: 1000px !important;
+}
+
+.fr-xl {
+	max-width: 1200px !important;
+}
+
+.table-fr-wrapper > .table-wrapper {
+    max-height: 70vh;
+	overflow: hidden;
+}
+
+.table-wrapper {
+	max-height: 80vh;
+	overflow: auto !important;
+}
+
+.table-wrapper::-webkit-scrollbar {
+	width: 10px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+	background: #F8F8F8; 
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,.1);
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+	background: rgba(0,0,0,.3);
+}
+.table-divo {
+	white-space:nowrap !important;
+	border-bottom: 1px solid rgb(222, 226, 230) !important;
+	margin-bottom: 0 !important;
+}
+.table-divo thead {
+	color: #FFF;
+	background: #007bff;
+	text-align: center;
+}
+
+.table-divo thead th {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-divo > tbody > tr {
+	text-align: center;
+	position: relative;
+}
+
+.table-divo > tbody > tr > td {
+	position: relative;
+}
+
+.table-divo > tbody > tr > td .material-icons {
+	color: #FFF;
+}
+
+.table-divo > tbody > tr:nth-child(even) {
+	background: #F8F8F8;
+}
+
+.table-divo > tbody > tr:hover {
+	background: #ffff99;
+}
+
+.table-divo > tbody > tr:hover > td:first-child::before {
+	content: '';
+	width: 4px;
+	height: 50%;
+	border-radius: 0 3px 3px 0;
+	background: #007bff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+}
+
+.table-divo > tbody > tr > td {
+	border: none !important;
+	vertical-align: middle;
+}
+
+.table-divo thead > tr > th {
+	font-weight: normal;
+	border-bottom: none;
+	height: 55px;
+	vertical-align: middle;
+}

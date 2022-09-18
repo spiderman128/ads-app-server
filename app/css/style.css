@@ -1,0 +1,542 @@
+@font-face {
+  font-family: 'Masque';
+  src: url("../fonts/masque.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kalpurush';
+  src: url("../fonts/kalpurush.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    resize: none;
+    user-select: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	color: #FFF;
+	background: #f0f8ff !important;
+	text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 100vh;
+    margin-bottom: 2em;
+}
+
+
+/* TYPEFACE */
+
+.masque {
+	font-family: 'Masque', sans-serif !important;
+}
+
+.kalpurush {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BACKGROUNDS */
+
+.bg-primary {
+	background-image: linear-gradient(#512DA9, #0288D1);
+}
+
+.bg-white {
+	background: #FFFFFF;
+}
+
+/* TITLE */
+
+.title {
+  font-family: 'Masque';
+  color: #fff;
+}
+
+/* MAIN */
+
+.main {
+    margin-top: 100px;
+}
+
+/* FORM */
+
+form {
+	max-width: 420px;
+	margin: auto;
+}
+
+form h2 {
+	font-family: 'Masque';
+	margin-top: 1.5em;
+}
+
+form .message {
+	font-family: 'Masque';
+	color: #eaeaea;
+	margin-top: 1em;
+}
+
+/* INPUT CONTAINER */
+
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 20px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.icon {
+  padding: 20px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+.no-font {
+	font-family: 'Algerian';
+	font-weight: bold;
+}
+
+
+/* EXODUS BUTTON */
+
+button.exodus {
+  background: #FFF;
+  color: #000;
+  padding: 20px 70px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: 'Masque';
+}
+
+button.exodus:hover {
+	opacity: 0.9;
+}
+
+button.done {
+	background: #039be5;
+	color: #fff;
+}
+
+.btn-primary {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+/* NOTICE */
+
+p.notice {
+	color: #FFF;
+	font-weight: 400;
+	margin: 15px;
+	border-radius: 3px;
+	padding: 15px;
+	background: linear-gradient( to right, rgba(255,255,255, 0.0), rgba(255,255,255, 0.2));
+}
+
+.notice-container {
+	color: #FFF;
+	font-weight: 400;
+	text-align: center;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 3px;
+	font-family: 'Kalpurush', sans-serif;
+	background: linear-gradient( to right, rgba(255,255,255, 0.0), rgba(255,255,255, 0.2));
+}
+
+.notice-container a {
+	color: #FFF;
+	word-wrap: break-word;
+	text-decoration: underline;
+	font-family: 'Kalpurush', sans-serif;
+}
+
+/* PROFILE */
+
+/* USER INFO */
+
+.user-info {
+	text-align: center;
+    margin-top: 30px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    margin: 30px 15px 15px 15px;
+    border-radius: 6px;
+    padding: 1em;
+}
+
+.user-info .masque {
+	margin-bottom: 0.3em;
+}
+
+/* USER DATA */
+
+.user-data {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+}
+
+.user-data td {
+	border: 0;
+    width: 50%;
+    padding: 1em;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Masque';
+}
+
+.user-data td p {
+	margin: 6px auto;
+	font-weight: bold;
+}
+
+.user-data .divider {
+    width: 3px;
+}
+
+.divider p {
+	width: 3px;
+	height: 70px;
+	background: #FFF;
+}
+
+/* TASK COUNT */
+
+.task-count {
+	font-size: 1.2em;
+	padding: 5px;
+}
+    
+.task-count p {
+	display: inline-block;
+	font-size: 0.8em;
+	margin: 3px;
+	padding: 10px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.2);
+	line-height: 1.4em;
+}
+
+/* EARN BUTTON */
+
+.earn-btns {
+	text-align: center;
+}
+
+.earn-btns button:active {
+	opacity: 0.7;
+}
+
+/* BASIC : VIEW & EARN | CLICK & EARN */
+
+.earn-btn-basic {
+  background: linear-gradient(to right, #0288d1, #311b92  );
+  color: white;
+  padding: 15px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 40%;
+  font-size: 15px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* CLASSIC: SPIN | CAPTCHA | CLAIM */
+
+.earn-btn-classic {
+  background-image: linear-gradient(to right, #0288d1, #311b92  );
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+  font-size: 15px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.earn-btn-classic .iconapp {
+  font-size: 30px;
+}
+
+btn-container {
+	padding: 2px;
+	margin: 10px;
+	text-align: center;
+}
+
+.btn-container button {
+	border: none;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: none;
+	padding: 5px;
+	height: 60px;
+	width: 30%;
+	color: white;
+	outline: none;
+	margin: 10px;
+	display: inline-block;
+	background: #4CAF50;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.btn-container button a {
+	text-decoration: none;
+}
+
+.btn-container button:active {
+	background: #388E3C;
+}
+
+/* EXODUS: TASK */
+
+.earn-btn-exodus {
+  background: #FFF;
+  color: #111;
+  padding: 20px 70px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: 'Masque';
+}
+
+/* Wallet Page */
+
+.main-balance {
+  text-align: center;
+  color: #fff;
+  padding: 80px 50px 50px 50px;
+}
+
+.main-balance h3 {
+  font-weight: normal;
+  margin: 1em auto;
+}
+
+span.balance-text {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.input-container-sm {
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 20px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.icon-sm {
+  padding: 10px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.input-field-sm {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.redem-btn {
+  padding: 20px 70px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.notify {
+  background-image: linear-gradient(to bottom right, #E64A19, #E64A19);
+  padding: 20px 70px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 30px;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.radio-main {
+	padding: 5px;
+}
+
+.radio-container {
+  display: inline-block;
+  color: #000;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 5px;
+}
+
+/* RADIO BUTTON */
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border: 2px solid #82CCC4;
+  border-radius: 50%;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #82CCC4;
+}
+.notice {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  color: black;
+  font-weight: 200;
+  font-family: 'Kalpurush', sans-serif;
+}
+
+p.gray {
+	color: gray;
+}
+
+/* PAYMENTS */
+
+.payments {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.cul {
+    margin: 0;
+    border-radius: 10px;
+}
+
+.cul a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.cul a:hover:not(.active) {
+    background-color: gray;
+}
+
+.cul a {
+    border-right: 1px solid #EAEAEA;
+}
+
+.cul a:last-child {
+    border-right: none;
+}
+
+.payments-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #eaeaea;
+}
+
+.payments-table .table-head {
+    color: white;
+    border: 1px solid #eaeaea;
+}
+
+.payments-table tr:hover {
+	background-color: #FAFAFA;
+}
+
+.payments-table tr th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.payments-table tr td {
+	color: black;
+}
+
+.payments-table tr td.Pending {
+	color: red;
+}
+
+.payments-table tr td.Paid {
+	color: green;
+}
